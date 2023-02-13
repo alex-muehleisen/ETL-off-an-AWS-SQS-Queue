@@ -8,7 +8,7 @@ Writing an application that can read from an AWS SQS Queue, transform that data,
 
 Navigate to the Docker [website](https://docs.docker.com/get-docker/) and follow the instructions to install Docker on your respective platform.
 
-### 1. Installing AWS CLI
+### 2. Installing AWS CLI
 
 Use the following code to install the AWS CLI on your platform:
 
