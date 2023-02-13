@@ -25,6 +25,8 @@ which docker
 
 If Docker is installed correctly, you should get a response that looks similar to `/usr/local/bin/docker`
 
+If it's your first time using Docker, it's helpful to check out this [guide](https://docs.docker.com/get-started/) on getting started with the software.
+
 ### 2. Installing AWS CLI
 
 Use the following code to install the AWS CLI on your platform:
