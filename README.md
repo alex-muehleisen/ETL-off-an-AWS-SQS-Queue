@@ -11,13 +11,19 @@ available via a custom localstack image that has the data pre-loaded.
 should be masked, but in a way where it is easy for data analysts to identify duplicate
 values in those fields.
 3. Writing each record to a Postgres database that is made available via a custom postgres image that
-has the tables pre-created
+has the tables pre-created.
 
 ## Setup
 
 ### 1. Installing Docker
 
-Navigate to the Docker [website](https://docs.docker.com/get-docker/) and follow the instructions to install Docker on your respective platform.
+Navigate to the Docker [website](https://docs.docker.com/get-docker/) and follow the instructions to install Docker on your respective platform. After installing, make sure it works by typing the following command into your terminal:
+
+```
+which docker
+```
+
+If Docker is installed correctly, you should get a response that looks similar to `/usr/local/bin/docker`
 
 ### 2. Installing AWS CLI
 
@@ -27,6 +33,22 @@ Use the following code to install the AWS CLI on your platform:
 pip install awscli-local
 ```
 
-If you have any issues, refer to this Stack Overflow page: 
+### 3. Installing PostgreSQL
+
+You can find instructions to downloading PostgreSQL on their website [here](https://www.postgresql.org/download/).
+
+The simplest method is to first download the app [here](https://postgresapp.com/downloads.html). Then run commands to configure $PATH by following the instructions [here](https://postgresapp.com/documentation/cli-tools.html).
+
+## Step 1: Downloading Docker Imgages
+
+There are two Docker Images with pre-loaded test data that we need to run the application. These two Docker Images contain the SQS server and the Postgres Server, respectively. Download both by running the following commands on your terminal:
+
+```
+docker pull fetchdocker/data-takehome-postgres
+```
+
+```
+docker pull fetchdocker/data-takehome-localstack
+```
 
 
