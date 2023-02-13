@@ -35,7 +35,7 @@ pip install awscli-local
 
 ### 3. Installing PostgreSQL
 
-You can find instructions to downloading PostgreSQL on their website [here](https://www.postgresql.org/download/).
+You can find instructions to downloading PostgreSQL on their [website](https://www.postgresql.org/download/).
 
 The simplest method is to first download the app [here](https://postgresapp.com/downloads.html). Then run commands to configure $PATH by following the instructions [here](https://postgresapp.com/documentation/cli-tools.html).
 
